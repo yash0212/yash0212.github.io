@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Navbar = () => {
     return (
-        <div className="navbar-wrapper fixed w-full shadow-xl">
+        <div className="navbar-wrapper fixed w-full shadow-xl bg-secondary">
             <div className="max-w-screen-2xl mx-auto flex justify-between py-3">
                 <div>
                     <img src="/logo.svg" className="w-10" />

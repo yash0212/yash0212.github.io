@@ -5,7 +5,6 @@ import Navbar from './common/Navbar'
 const App = () => {
     return (
         <div>
-            {/* <div className="navbar fixed">Hello navbar here</div> */}
             <Navbar />
             <div className="max-w-screen-2xl mx-auto pt-16">
                 <FullPage controls={SlideControls} className="max-w-screen-2xl">
