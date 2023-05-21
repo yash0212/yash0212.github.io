@@ -2,6 +2,9 @@ import { FullPage, Slide } from 'react-full-page'
 import SlideControls from './common/SlideControls'
 import Navbar from './common/Navbar'
 import { useRef } from 'react'
+import KalviumLogo from './assets/kalvium-logo.svg'
+import FACEPrepLogo from './assets/faceprep-logo.svg'
+import XploraboxLogo from './assets/xplorabox-logo.jpg'
 
 const App = () => {
     const fullPageRef = useRef(null)
@@ -39,8 +42,25 @@ const App = () => {
                             development.
                         </div>
                     </Slide>
-                    <Slide>
-                        <h2>Work</h2>
+                    <Slide className="flex items-center flex-col">
+                        <div className="mt-12 text-xl">
+                            I am proud to have worked for awesome startups and
+                            companies
+                        </div>
+                        <div className="mt-6 flex">
+                            <div className="bg-white w-60 h-20 flex justify-center items-center">
+                                <img src={XploraboxLogo} className="w-52" />
+                            </div>
+                            <div className="bg-white w-60 h-20 ml-12 flex justify-center items-center">
+                                <img src={FACEPrepLogo} className="w-52" />
+                            </div>
+                            <div className="bg-white w-60 h-20 ml-12 flex justify-center items-center">
+                                <img src={KalviumLogo} className="w-52" />
+                            </div>
+                        </div>
+                        {/* <div className="mt-12 text-xl">
+                            Here are some of the web products I have created
+                        </div> */}
                     </Slide>
                     <Slide>
                         <h2>Skills</h2>
