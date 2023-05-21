@@ -9,6 +9,7 @@ const SlideControls = ({
         for (let i = 0; i < slidesCount; i++) {
             buttons.push(
                 <button
+                    key={i}
                     className={`w-3 h-3 ${
                         i === currentSlideIndex ? 'bg-primary' : 'bg-secondary'
                     } rotate-45 border-2 border-primary`}
